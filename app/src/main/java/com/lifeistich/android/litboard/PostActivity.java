@@ -41,6 +41,17 @@ public class PostActivity extends AppCompatActivity
         switch (id){
             case R.id.post://コロン: と　セミコロン; の違いは？
                 //TODO:投稿ボタンを押した時の処理
+
+                //投稿を作る
+                String message = mPostText.getText().toString();
+                String userName = mUsernameText.getText().toString();
+                Post post = new Post(userName, message);
+
+                //投稿する
+                refMsg.push().setValue(post);
+
+                //アクティビティを閉じる
+                finish();
                 break;
         }
     }
