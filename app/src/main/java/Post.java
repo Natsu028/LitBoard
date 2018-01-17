@@ -18,13 +18,25 @@ public class Post {
         this.message = message;
     }
     //アクセサメソッド：外部からアクセスする為に用意されたメソッド
-    public String getMessage(){return message;}
+    public String getMessage(){
 
-    public void setMessage(String message){this.message = message;}
+        return message;
+    }
 
-    public String getUserName(){return userName;}
+    public void setMessage(String message){
 
-    public void setUserName(String userName){this.userName = userName;}
+        this.message = message;
+    }
+
+    public String getUserName(){
+
+        return userName;
+    }
+
+    public void setUserName(String userName){
+
+        this.userName = userName;
+    }
 
     //JAVAでは基本的にクラスのフィールドの内容を書き換えたり、読んだりする時にはget~, set~ といったアクセサメソッドを使う
 }
