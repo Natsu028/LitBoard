@@ -1,5 +1,6 @@
 package com.lifeistich.android.litboard;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,8 +11,7 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class PostActivity extends AppCompatActivity
-        implements View.OnClickListener{
+public class PostActivity extends AppCompatActivity implements View.OnClickListener{
 
     //firebase用
     FirebaseDatabase database = FirebaseDatabase.getInstance();
